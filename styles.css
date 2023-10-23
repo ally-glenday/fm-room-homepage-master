@@ -100,31 +100,25 @@ nav ul{
 .visible{
     visibility: visible;
 }
-/* Set the hamburger icon, logo and menu ul as flex items */ 
-.nav-flexbox-container{
-    display: flex;
-} 
 
-.nav-flexbox:nth-child(1){
-    flex-grow: 2;
+.hamburger-on-click{
+    background-color: white;
 }
- 
-.nav-flexbox:nth-child(2){
-    flex-grow: 1;
+
+.flex-container{
+    display: flex;
 }
-.nav-flexbox:nth-child(3){
-    flex-grow: 2;
+
+#nav-flexbox-container {
+    align-items: center;
+    height: 7rem;
 }
 
 ul li{
     text-transform: lowercase;
     font-weight: 600;
 }
-ul{
-    /* background-color: var(--white); */
-    /* height: 5rem;
-    width: 50vw; */
-}
+
 /* Frontend Mentor attribution styling */
 .attribution { font-size: 11px; text-align: center; }
 .attribution a { color: hsl(228, 45%, 44%); }
