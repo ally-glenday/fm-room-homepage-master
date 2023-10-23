@@ -52,9 +52,80 @@ html {
   *, *:before, *:after {
     box-sizing: inherit;
   }
-  
+
+/* Sets buttons bakcground as transparent and no border with pointer cursor */ 
+button{
+    background-color: rgb(54, 25, 25, .00004);
+    border: none;
+    cursor: pointer;
+}
 /* --------------------------------------- End of Reset -------------------------------------------- */
 
+/* Custom CSS properties for reusable colours */ 
+:root{
+    --dark-grey: hsl(0, 0%, 63%);
+    --black: hsl(0, 0%, 0%);
+    --white: hsl(0, 0%, 100%);
+    --very-dark-grey: hsl(0, 0%, 27%);
+}
+body{
+    font-family: 'League Spartan';
+}
+
+/* Main background image / hero image for mobile */
+button{
+    background-image: url("images/icon-hamburger.svg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 1rem;
+    height: 1rem;
+}
+/* Sets the main hero image as nav background image */ 
+nav{
+    background-image: url("images/mobile-image-hero-1.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 45vh;
+}
+
+/* Targets main 'room' logo */ 
+img[src="images/logo.svg"]{
+    height: 1rem;
+}
+/* Sets menu items as hidden for hamburger toggle */ 
+nav ul{
+    visibility: hidden;
+}
+/* Make a class to switch to in my JS function */ 
+.visible{
+    visibility: visible;
+}
+/* Set the hamburger icon, logo and menu ul as flex items */ 
+.nav-flexbox-container{
+    display: flex;
+} 
+
+.nav-flexbox:nth-child(1){
+    flex-grow: 2;
+}
+ 
+.nav-flexbox:nth-child(2){
+    flex-grow: 1;
+}
+.nav-flexbox:nth-child(3){
+    flex-grow: 2;
+}
+
+ul li{
+    text-transform: lowercase;
+    font-weight: 600;
+}
+ul{
+    /* background-color: var(--white); */
+    /* height: 5rem;
+    width: 50vw; */
+}
+/* Frontend Mentor attribution styling */
 .attribution { font-size: 11px; text-align: center; }
 .attribution a { color: hsl(228, 45%, 44%); }
 

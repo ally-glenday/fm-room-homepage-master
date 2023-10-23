@@ -4,48 +4,46 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
   <link rel="stylesheet" href="styles.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@500;600;700&display=swap" rel="stylesheet">
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
-  <title>Frontend Mentor | Room homepage</title> 
+  <title>Frontend Mentor | Room Homepage</title> 
 </head>
 <body>
   <header>
     <nav>
-      <ul>
-        <li>Home</li>
-        <li>Shop</li>
-        <li>About</li>
-        <li>Contact</li>
-      </ul>
+      <div class="nav-flexbox-container">
+        <button class="nav-flexbox-item" onclick="toggleHamburgerMenu()" alt="Hamburger menu icon"></button>
+        <img class="nav-flexbox-item" src="images/logo.svg" alt="Room logo">
+        <ul class="nav-flexbox-item" id="hamburger-toggle-ul">
+          <li>Home</li>
+          <li>Shop</li>
+          <li>About</li>
+          <li>Contact</li>
+        </ul>
+      </div>
     </nav>
   </header>
   <h1>Discover innovative ways to decorate</h1>
-
   <p>We provide unmatched quality, comfort, and style for property owners across the country. 
     Our experts combine form and function in bringing your vision to life. Create a room in your 
     own style with our collection and make your property a reflection of you and what you love.
   </p>
-
   <a href="#">Shop now</a>
-
   <h2>We are available all across the globe</h2>
-
   <p>With stores all over the world, it&#39;s easy for you to find furniture for your home or place of business. 
     Locally, we&#39;re in most major cities throughout the country. Find the branch nearest you using our 
     store locator. Any questions? Don't hesitate to contact us today.
   </p>
-
   <a href="#">Shop now</a>
-
   <h2>Manufactured with the best materials</h2>
   <p> Our modern furniture store provide a high level of quality. Our company has invested in advanced technology 
     to ensure that every product is made as perfect and as consistent as possible. With three decades of 
     experience in this industry, we understand what customers want for their home and office.
   </p>
   <a href="#">Shop now</a>
-
   <h2>About our furniture</h2>
-
   <p>Our multifunctional collection blends design and function to suit your individual taste.
   Make each room unique, or pick a cohesive theme that best express your interests and what
   inspires you. Find the furniture pieces you need, from traditional to contemporary styles
@@ -57,5 +55,6 @@
       Coded by <a href="https://github.com/ally-glenday">Ally Glenday</a>.
     </div>
   </footer>
+  <script src="script.js"></script>
 </body>
 </html>
