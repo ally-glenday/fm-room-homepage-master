@@ -97,7 +97,7 @@ nav ul{
     display: none;
 }
 /* Make a class to switch to in my JS function */ 
-.visible{
+.display-flex{
     display: flex;
 }
 
@@ -120,15 +120,12 @@ nav ul{
     gap: 1rem;
 }
 
-.nav-flexbox-item:nth-child(1){
-    flex-grow: 1;
+/* .nav-flexbox-item:nth-child(1){
+    flex-grow: 0;
 }
 .nav-flexbox-item:nth-child(2){
-    flex-grow: 3;
-}
-.nav-flexbox-item:nth-child(3){
-    flex-basis: 0;
-}
+    flex-grow: 0;
+} */
 
 ul li{
     text-transform: lowercase;
