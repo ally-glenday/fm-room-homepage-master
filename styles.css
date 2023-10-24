@@ -113,10 +113,7 @@ nav ul{
     display: grid;
 }
 /* Targets the main nav flexbox */ 
-#nav-flexbox-container {
-   /* align-items: center;
-   height: 7rem; */
-}
+xs
 
 
 ul li{
