@@ -94,24 +94,40 @@ img[src="images/logo.svg"]{
 }
 /* Sets menu items as hidden for hamburger toggle */ 
 nav ul{
-    visibility: hidden;
+    display: none;
 }
 /* Make a class to switch to in my JS function */ 
 .visible{
-    visibility: visible;
+    display: flex;
 }
 
 .hamburger-on-click{
     background-color: white;
 }
 
+#hamburger-toggle-ul{
+    background-color: purple;
+}
+
 .flex-container{
     display: flex;
 }
-
+/* Targets the main nav flexbox */ 
 #nav-flexbox-container {
     align-items: center;
+    justify-content: center;
     height: 7rem;
+    gap: 1rem;
+}
+
+.nav-flexbox-item:nth-child(1){
+    flex-grow: 1;
+}
+.nav-flexbox-item:nth-child(2){
+    flex-grow: 3;
+}
+.nav-flexbox-item:nth-child(3){
+    flex-basis: 0;
 }
 
 ul li{
