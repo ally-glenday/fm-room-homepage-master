@@ -79,6 +79,7 @@ button{
     background-repeat: no-repeat;
     width: 1.5rem;
     height: 1rem;
+    
 }
 /* Sets the main hero image as nav background image */ 
 nav{
@@ -109,12 +110,26 @@ nav ul{
     background-color: purple;
 }
 
-.flex-container{
+.grid-container{
     display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(5, 1fr);
+    height: 7rem;
 }
-/* Targets the main nav flexbox */ 
-xs
 
+.nav-grid-item:nth-child(1){
+    justify-self: center;
+    align-self: center;
+    grid-column: 1;
+    grid-row: 3;
+    
+}
+.nav-grid-item:nth-child(2){
+    justify-self: center;
+    align-self: center;
+    grid-column: 3;
+    grid-row: 3;
+}
 
 ul li{
     text-transform: lowercase;
