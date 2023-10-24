@@ -75,9 +75,9 @@ body{
 /* Main background image / hero image for mobile */
 button{
     background-image: url("images/icon-hamburger.svg");
-    background-size: cover;
+    background-size: contain;
     background-repeat: no-repeat;
-    width: 1rem;
+    width: 1.5rem;
     height: 1rem;
 }
 /* Sets the main hero image as nav background image */ 
@@ -97,8 +97,8 @@ nav ul{
     display: none;
 }
 /* Make a class to switch to in my JS function */ 
-.display-flex{
-    display: flex;
+.display-grid{
+    display: grid;
 }
 
 .hamburger-on-click{
@@ -110,26 +110,25 @@ nav ul{
 }
 
 .flex-container{
-    display: flex;
+    display: grid;
 }
 /* Targets the main nav flexbox */ 
 #nav-flexbox-container {
-    align-items: center;
-    justify-content: center;
-    height: 7rem;
-    gap: 1rem;
+   /* align-items: center;
+   height: 7rem; */
 }
 
-/* .nav-flexbox-item:nth-child(1){
-    flex-grow: 0;
-}
-.nav-flexbox-item:nth-child(2){
-    flex-grow: 0;
-} */
 
 ul li{
     text-transform: lowercase;
     font-weight: 600;
+}
+h1{
+    font-weight: 600;
+    font-size: 2.2rem;
+}
+main{
+    margin: 10%;
 }
 
 /* Frontend Mentor attribution styling */
