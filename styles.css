@@ -97,26 +97,39 @@ img[src="images/logo.svg"]{
 nav ul{
     display: none;
 }
-/* Make a class to switch to in my JS function */ 
-.display-grid{
-    display: grid;
-}
 
 .hamburger-on-click{
     background-color: white;
 }
 
 #hamburger-toggle-ul{
-    background-color: purple;
+    /* grid-template-columns: repeat(4, 1fr); */
+    grid-template-rows: repeat(5, 1fr);
+    grid-column-start: 3;
+    grid-column-end: 6;
+    grid-row-start: 1;
+    grid-row-end: 6;
 }
 
+.close-icon{
+    background-image: url("images/icon-close.svg");
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 1.5rem;
+    height: 1rem;
+}
+
+/* Creates a 5 x 5 grid to positon my navbar elements */ 
 .grid-container{
     display: grid;
     grid-template-columns: repeat(5, 1fr);
     grid-template-rows: repeat(5, 1fr);
     height: 7rem;
 }
-
+.display-grid{
+    display: grid;
+}
+/* Targets hamburger menu icon */
 .nav-grid-item:nth-child(1){
     justify-self: center;
     align-self: center;
@@ -124,11 +137,16 @@ nav ul{
     grid-row: 3;
     
 }
+/* Targets 'room' logo  */
 .nav-grid-item:nth-child(2){
     justify-self: center;
     align-self: center;
     grid-column: 3;
     grid-row: 3;
+}
+/* Sets grid items to centre of grid */
+li.ul-grid-item{
+    grid-row-start: 3;
 }
 
 ul li{
