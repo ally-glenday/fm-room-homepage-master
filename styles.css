@@ -158,25 +158,31 @@ ul li{
 
 .slide-button-container{
     position: absolute;
-    background-color: var(--black);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 8rem;
+    height: 4rem;
+    background-color: black;
     bottom: 0;
     right: 0;
 }
 .slide-show-button{
-    display: inline-block;
-    width: 4rem;
-    height: 4rem;
+    width: 100%;
+    height: 100%;
+    background-position: center;
     background-repeat: no-repeat;
     background-color: var(--black);
-    
 }
 
 .slide-show-button:first-of-type{
     background-image: url("images/icon-angle-left.svg");
+    background-color: blue;
    
 }
 .slide-show-button:last-of-type{
     background-image: url("images/icon-angle-right.svg");
+    background-color: green;
     
 }
 
@@ -186,6 +192,10 @@ h1{
 }
 main{
     margin: 10%;
+}
+
+a.slide-show-button:hover{
+    background-color: var(--dark-grey);
 }
 
 /* Frontend Mentor attribution styling */
