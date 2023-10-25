@@ -177,25 +177,44 @@ ul li{
 
 .slide-show-button:first-of-type{
     background-image: url("images/icon-angle-left.svg");
-    background-color: blue;
-   
 }
 .slide-show-button:last-of-type{
-    background-image: url("images/icon-angle-right.svg");
-    background-color: green;
-    
+    background-image: url("images/icon-angle-right.svg");    
 }
 
 h1{
     font-weight: 600;
     font-size: 2.2rem;
+    margin-bottom: 1rem;
 }
 main{
-    margin: 10%;
+    margin: 1.5rem;
 }
 
+main p{
+    color: var(--dark-grey);
+    /* font-size: .9rem; */
+    font-weight: 500;
+    line-height: 1.5rem;
+    margin-bottom: 2.5rem;
+}
+
+main a{
+    display: block;
+    width: 15rem;
+    background-image: url("images/icon-arrow.svg");
+    background-repeat: no-repeat;
+    background-position: right top;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: .8rem;
+    letter-spacing: 1rem;
+    color: var(--black);
+    margin-bottom: 3.5rem;
+}
+/* Gives the slider a grey hover state */ 
 a.slide-show-button:hover{
-    background-color: var(--dark-grey);
+    background-color: var(--very-dark-grey);
 }
 
 /* Frontend Mentor attribution styling */
