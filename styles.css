@@ -156,27 +156,21 @@ ul li{
     font-weight: 600;
 }
 
-.wrapper{
-    display: flex;
+.slide-button-container{
+    position: absolute;
+    background-color: var(--black);
+    bottom: 0;
+    right: 0;
 }
 .slide-show-button{
     display: inline-block;
-    width: 2rem;
-    height: 2rem;
+    width: 4rem;
+    height: 4rem;
     background-repeat: no-repeat;
     background-color: var(--black);
-}
-
-.slider-container{
-    background-color: var(--black);
-    max-width: fit-content;
-   
-}
-.slide-show-button{
-    background-color: var(--black);
-    padding: 5%;
     
 }
+
 .slide-show-button:first-of-type{
     background-image: url("images/icon-angle-left.svg");
    
