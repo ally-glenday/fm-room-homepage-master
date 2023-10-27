@@ -11,43 +11,48 @@
   <title>Frontend Mentor | Room Homepage</title> 
 </head>
 <body>
-  <header>
-    <div>
-      <nav>
-        <div id="nav-grid-container" class="grid-container">
-          <button id="toggle-icon" class="nav-grid-item" onclick="toggleHamburgerMenu()" alt="Hamburger menu icon"></button>
-          <img class="nav-grid-item" src="images/logo.svg" alt="Room logo">
-          <ul id="hamburger-toggle-ul">
-            <li class="ul-grid-item">Home</li>
-            <li class="ul-grid-item">Shop</li>
-            <li class="ul-grid-item">About</li>
-            <li class="ul-grid-item">Contact</li>
-          </ul>
-        </div>
-        <div class="slide-button-container">
-          <a class="slide-show-button" href="#"></a>
-          <a class="slide-show-button" href="#"></a>
-        </div>
-      </nav>
+  <div class="display-grid-desktop">
+    <div class="grid-item-desktop">
+      <header>
+        <nav>
+          <div id="nav-grid-container" class="grid-container">
+            <button id="toggle-icon" class="nav-grid-item" onclick="toggleHamburgerMenu()" alt="Hamburger menu icon"></button>
+            <img class="nav-grid-item" src="images/logo.svg" alt="Room logo">
+            <ul id="hamburger-toggle-ul">
+              <li class="ul-grid-item">Home</li>
+              <li class="ul-grid-item">Shop</li>
+              <li class="ul-grid-item">About</li>
+              <li class="ul-grid-item">Contact</li>
+            </ul>
+          <div class="slide-button-container">
+            <a class="slide-show-button" href="#"></a>
+            <a class="slide-show-button" href="#"></a>
+          </div>
+        </nav>
+      </div>
+    </header>
+  </div>
+  <div class="grid-item-desktop">
+    <main>
+      <h1>Discover innovative ways to decorate</h1>
+      <p>We provide unmatched quality, comfort, and style for property owners across the country. 
+        Our experts combine form and function in bringing your vision to life. Create a room in your 
+        own style with our collection and make your property a reflection of you and what you love.
+      </p>
+      <a href="#">Shop now</a>
     </div>
-  </header>
-  <main>
-    <h1>Discover innovative ways to decorate</h1>
-    <p>We provide unmatched quality, comfort, and style for property owners across the country. 
-      Our experts combine form and function in bringing your vision to life. Create a room in your 
-      own style with our collection and make your property a reflection of you and what you love.
-    </p>
-    <a href="#">Shop now</a>
-
-
-    <img src="images/image-about-dark.jpg" width="420" height="266" alt="">
-    <h3>About our furniture</h3>
-    <p>Our multifunctional collection blends design and function to suit your individual taste.
-    Make each room unique, or pick a cohesive theme that best express your interests and what
-    inspires you. Find the furniture pieces you need, from traditional to contemporary styles
-    or anything in between. Product specialists are available to help you create your dream space.
-    </p>
-    <img src="images/image-about-light.jpg" width="420" height="266" alt="">
+  
+    <div class="grid-item-desktop"> <img src="images/image-about-dark.jpg" width="420" height="266" alt="">
+    </div>
+    <div class="grid-item-desktop">  <h3>About our furniture</h3>
+      <p>Our multifunctional collection blends design and function to suit your individual taste.
+      Make each room unique, or pick a cohesive theme that best express your interests and what
+      inspires you. Find the furniture pieces you need, from traditional to contemporary styles
+      or anything in between. Product specialists are available to help you create your dream space.
+      </p></div>
+      <div class="grid-item-desktop"><img src="images/image-about-light.jpg" width="420" height="266" alt="">
+      </div>
+    
 
 
 <!-- Content for JS function -->
@@ -64,6 +69,7 @@
     </p>
     <a href="#">Shop now</a> -->
   </main>
+</div>
   <footer>
     <div class="attribution">
       Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 

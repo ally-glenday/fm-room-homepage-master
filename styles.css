@@ -229,6 +229,24 @@ main a{
     color: var(--black);
     margin-bottom: 3.5rem;
 }
+
+.display-grid-desktop{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+}
+
+.grid-item-desktop:nth-child(1){
+    /* grid-column-start: 1;
+    grid-column-end: 2; */
+}
+.grid-item-desktop:nth-child(2){
+    /* grid-column-start: 2;
+    grid-column-end: 2; */
+}
+
+
+
 /* Gives the slider a grey hover state */ 
 a.slide-show-button:hover{
     background-color: var(--very-dark-grey);
