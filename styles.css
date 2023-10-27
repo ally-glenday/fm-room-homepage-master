@@ -252,7 +252,8 @@ a.slide-show-button:hover{
         background-image: url(images/desktop-image-hero-1.jpg);
         background-size: contain;
         width: auto;
-        height: 65vh;
+        height: 62vh;
+        
     }
 
     .display-grid-desktop{
@@ -303,6 +304,14 @@ a.slide-show-button:hover{
     }
     a.slide-show-button{
         margin: 0;
+    }
+    
+    .slide-button-container{
+        position: relative;
+        width: 8.9rem;
+        height: 4.0rem;
+        top: 61px;
+        right: 142px;
     }
     
   }
