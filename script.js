@@ -1,3 +1,5 @@
+
+
 function toggleHamburgerMenu(){
     const hamburgerMenuIcon = document.getElementById("hamburger-toggle-ul");
     const navHamburgerMenu = document.getElementById("nav-grid-container");
@@ -6,3 +8,9 @@ function toggleHamburgerMenu(){
     navHamburgerMenu.classList.toggle("hamburger-on-click");
     toggleIcon.classList.toggle("close-icon");
 }
+
+if (window.screen.width >= 1024 && window.screen.height >= 768) {
+    const slideContainer = document.getElementById("slide-button-container");
+    document.getElementById("main-section").appendChild(slideContainer);
+  }
+
