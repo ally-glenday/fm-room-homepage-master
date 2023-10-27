@@ -232,7 +232,7 @@ main a{
 
 .display-grid-desktop{
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns:  30%;
     grid-template-rows: 1fr 1fr;
 }
 
