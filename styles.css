@@ -258,7 +258,7 @@ a.slide-show-button:hover{
 
     .display-grid-desktop{
         display: grid;
-        grid-template-columns:  1fr 2fr 1fr;
+        grid-template-columns:  repeat(10, 1fr);
         grid-template-rows: 1fr 1fr;
         width: 100vw;
         height: 100vh;
@@ -292,26 +292,29 @@ a.slide-show-button:hover{
     .grid-item-desktop:nth-child(4){
         grid-column: 2 / span 3;
         grid-row-start: 2;
-        align-self: center;
-        margin: 3%;
+        margin: 2%;
+        max-width: 55%;
       
-           
     }
     .grid-item-desktop:nth-child(5){
         grid-column: 3 / span 1;
         grid-row-start: 2;
+        justify-self: end;
         /* align-self: end; */
     }
+    h3{
+        font-size: 1.1rem;
+    }
+
     a.slide-show-button{
         margin: 0;
     }
     
     .slide-button-container{
         position: relative;
-        width: 8.9rem;
-        height: 4.0rem;
-        top: 61px;
-        right: 142px;
+      
+      
+        
     }
     
   }
