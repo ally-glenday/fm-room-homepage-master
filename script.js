@@ -9,7 +9,7 @@ function toggleHamburgerMenu(){
     toggleIcon.classList.toggle("close-icon");
 }
 
-if (window.screen.width >= 1024 && window.screen.height >= 768) {
+if (window.screen.width >= 550 && window.screen.height >= 550) {
     const slideContainer = document.getElementById("slide-button-container");
     document.getElementById("main-section").appendChild(slideContainer);
   }
