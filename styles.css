@@ -253,8 +253,8 @@ a.slide-show-button:hover{
         grid-template-columns:  repeat(10, minmax(100px, 1fr));
         /* grid-template-columns:    */
         grid-template-rows: minmax(50px, 65vh) 1fr; 
-        max-width: 100vw;
-        max-height: 100vh;
+        width: 100vw;
+        height: auto;
     }
     nav{
         background-image: none;
@@ -342,6 +342,11 @@ a.slide-show-button:hover{
         width: 9em;
         height: 4.5em;
         
+    }
+
+    main h1, main p, main a{
+        width: 70%;
+        justify-self: center;
     }
     
   }
